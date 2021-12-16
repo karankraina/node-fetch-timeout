@@ -1,3 +1,3 @@
-const mufun = someProps => {
-    return `my template string`
+export default () => {
+    console.log(' This is working ')
 }

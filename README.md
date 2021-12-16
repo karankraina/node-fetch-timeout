@@ -1,1 +1,1 @@
-# npm-template-package
+# node-fetch-timeout
