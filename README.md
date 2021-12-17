@@ -29,14 +29,28 @@ npm install node-fetch-timeout
 
 ## Usage
 
+### Using require
+
+```sh
+
+const { request } = require('node-fetch-timeout);
+
+```
+
+### Using ES6 Modules
+
+```sh
+
+import { request } from 'node-fetch-timeout';
+
+```
+
 
 ### Using Promise Chain
 
 ```sh
 
-import fetch from 'node-fetch-timeout';
-
-fetch(url, {
+request(url, {
     ...standardRequestHeaders,
     timeout: 1, // timeout in milliseconds
     retryCount: 3 // number of retires - defaults to 1
@@ -53,10 +67,8 @@ fetch(url, {
 
 ```sh
 
-import fetch from 'node-fetch-timeout';
-
 try {
-    const res = await fetch(url, {
+    const res = await request(url, {
         ...standardRequestHeaders,
         timeout: 1, // timeout in milliseconds
         retryCount: 3 // number of retires - defaults to 1
