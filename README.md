@@ -17,7 +17,7 @@
   </a>
 </p>
 
-> Wrapper package for node-fetch package that adds timeout and retry option
+> A light-weight wrapper package built on awesome [node-fetch](https://github.com/node-fetch/node-fetch) package that adds timeout and retry option.
 
 ### 🏠 [Homepage](https://github.com/karankraina/node-fetch-timeout)
 

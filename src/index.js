@@ -1,5 +1,4 @@
 import fetch from 'node-fetch';
-import 'babel-polyfill';
 
 /**
  * Make http/ https request with timeout and retries

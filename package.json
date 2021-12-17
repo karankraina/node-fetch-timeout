@@ -1,6 +1,6 @@
 {
   "name": "node-fetch-timeout",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wrapper package for node-fetch package that adds timeout and retry option.",
   "main": "lib/index.js",
   "scripts": {
@@ -9,18 +9,25 @@
     "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
-  "author": "Karan Raina <karanraina1996@gmail.com>",
+  "author": "Karan Raina <karanraina1996@gmail.com> (https://www.karanraina.tech/)",
+  "homepage": "https://github.com/karankraina/node-fetch-timeout",
   "license": "ISC",
   "babel": {
     "presets": [
-      "@babel/preset-env"
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": true
+          }
+        }
+      ]
     ]
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.5",
-    "@babel/preset-env": "^7.16.5",
-    "babel-polyfill": "^6.26.0"
+    "@babel/preset-env": "^7.16.5"
   },
   "dependencies": {
     "node-fetch": "^2.6.6"
