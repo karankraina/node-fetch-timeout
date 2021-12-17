@@ -1,6 +1,6 @@
 {
   "name": "node-fetch-timeout",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Wrapper package for node-fetch package that adds timeout and retry option.",
   "main": "lib/index.js",
   "scripts": {
@@ -24,6 +24,16 @@
       ]
     ]
   },
+  "keywords": [
+    "request",
+    "fetch",
+    "node-fetch",
+    "fetch timeout",
+    "fetch retry",
+    "fetch retry timeout",
+    "fetch retry timeout error",
+    "node-fetch retry"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.5",

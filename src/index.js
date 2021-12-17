@@ -8,7 +8,7 @@ import fetch from 'node-fetch';
  * @param {number} retryCount number of retries
  * @returns http response
  */
-export default async (url, options) => {
+export const request = async (url, options) => {
     const { retryCount = 1, ...requestOptions } = options;
     let currentRetryCount = 1;
     while (currentRetryCount <= retryCount) {
