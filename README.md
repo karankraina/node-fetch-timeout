@@ -53,7 +53,7 @@ import { request } from 'node-fetch-timeout';
 request(url, {
     ...standardRequestHeaders,
     timeout: 1, // timeout in milliseconds
-    retryCount: 3 // number of retires - defaults to 1
+    retryCount: 3 // number of retries - defaults to 1
   }).then(res => {
       // res is raw response
       // use res.json() or res.text()
